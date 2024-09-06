@@ -3,18 +3,33 @@
     "slogan" : "Getting ahead to keep you way ahead",
 
     "navigationLinks" : [
-        { "id": 1, "accessCode": 1, "title": "Jobs" },
-        { "id": 2, "accessCode": 1, "title": "Applicants" },
-        { "id": 3, "accessCode": 1, "title": "Employees" },
-        { "id": 4, "accessCode": 2, "title": "Settings" }
-    ],
-
-    "activeNavigation" : [
-        { "id": 1, "title": "Active Jobs"},
-        { "id": 1, "title": "Inactive Jobs"},
-        { "id": 1, "title": "Post a Job"},
-        { "id": 2, "title": "Active Applicants"},
-        { "id": 2, "title": "Newly Registered"},
-        { "id": 2, "title": "Inactive Applicants"}
+        { "id": 1, "accessCode": 1, "title": "Jobs", 
+            "activeLinks": [
+                { "id": 1, "title": "Active Jobs"},
+                { "id": 1, "title": "Inactive Jobs"},
+                { "id": 1, "title": "Post a Job"}
+            ]
+        },
+        { "id": 2, "accessCode": 1, "title": "Applicants",
+            "activeLinks": [
+                { "id": 2, "title": "Active Applicants"},
+                { "id": 2, "title": "Newly Registered"},
+                { "id": 2, "title": "Inactive Applicants"}
+            ]
+        },
+        { "id": 3, "accessCode": 1, "title": "Employees", 
+            "activeLinks": [
+                { "id": 3, "title": "Active Deployment"},
+                { "id": 3, "title": "Status"}
+            ]
+        },
+        { "id": 4, "accessCode": 2, "title": "Settings", 
+            "activeLinks": [
+                { "id": 4, "title": "Form Setting"},
+                { "id": 4, "title": "Admin Setting"},
+                { "id": 4, "title": "User Accounts"}
+            ]
+    
+        }
     ]
 }

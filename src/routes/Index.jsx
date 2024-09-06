@@ -1,6 +1,6 @@
 import React from "react";
 import loginImg from "../assets/login-img.png";
-import Card from "../components/Login/Card";
+import Card from "../components/login/Card";
 
 const Index = () => {
   return (
