@@ -12,8 +12,6 @@ const Authentication = () => {
   function submitLogin(e) {
     e.preventDefault();
 
-    isLoading(true);
-
     const loginCredentials = JSON.stringify({
       userName: userName.current.value,
       password: passWord.current.value,
@@ -38,13 +36,23 @@ const Authentication = () => {
       onSubmit={submitLogin}
     >
       <div className="flex flex-col gap-2 p-4">
-        <div className="flex gap-1">
+        <div className="flex gap-1 items-center">
           <UserCircle />
-          <input ref={userName} type="text" placeholder="Username" />
+          <input
+            ref={userName}
+            type="text"
+            placeholder="Username"
+            className="py-2 rounded-md"
+          />
         </div>
-        <div className="flex gap-1">
+        <div className="flex gap-1 items-center">
           <Lock />
-          <input ref={passWord} placeholder="Password" type="password" />
+          <input
+            ref={passWord}
+            placeholder="Password"
+            type="password"
+            className="py-2 rounded-md"
+          />
         </div>
         <DefaultButton title="Login" />
       </div>
